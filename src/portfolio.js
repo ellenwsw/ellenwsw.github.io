@@ -197,7 +197,7 @@ const degrees = {
     {
       title: "University of British Columbia",
       subtitle: "Master of Geomatics for Environmental Management (MGEM)",
-      logo_path: "iiitk_logo.png",
+      logo_path: "MGEM_logo.png",
       alt_name: "IIITDM Kurnool",
       duration: "2025 - 2026",
       descriptions: [
@@ -209,7 +209,7 @@ const degrees = {
     {
       title: "University of British Columbia",
       subtitle: "Bachelor of Arts in Environment and Sustainability, Minor in GIS",
-      logo_path: "iu_logo.png",
+      logo_path: "ubc_logo.png",
       alt_name: "Indiana University Bloomington",
       duration: "2022 - 2025",
       descriptions: [
@@ -221,7 +221,7 @@ const degrees = {
     {
       title: "University of Alberta",
       subtitle: "Bachelor of Commerce in Business Economics and Law",
-      logo_path: "iu_logo.png",
+      logo_path: "ua_logo_green_rgb.png",
       alt_name: "Indiana University Bloomington",
       duration: "2015 - 2019",
       descriptions: [
