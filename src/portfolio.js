@@ -1,4 +1,4 @@
-/* Change this file to get your personal Porfolio */
+/* Change this file to get your personal Portfolio */
 
 // Website related settings
 const settings = {
@@ -9,7 +9,7 @@ const settings = {
 const seo = {
   title: "Ellen's E-Portfolio",
   description:
-    "A soon-to-be MGEM graduate, a lifelong learner, a GISer, and a feminist",
+    "A soon-to-be MGEM graduate, a multi-disciplinary lifelong learner, a GISer, a trilingual, and a feminist",
   og: {
     title: "Ellen Wu E-Portfolio",
     type: "website",
@@ -22,7 +22,7 @@ const greeting = {
   title: "Ellen Wu",
   logo_name: "Ellen Wu",
   subTitle:
-    "A soon-to-be UBC MGEM graduate, a lifelong learner, a GISer, and a feminist.",
+    "A soon-to-be UBC MGEM graduate, a multi-disciplinary lifelong learner, a GISer, a trilingual, and a feminist.",
   portfolio_repository: "https://github.com/ellenwsw/E-Portfolio",
 };
 
@@ -57,7 +57,7 @@ const skills = {
     {
       title: "Remote Sensing & Environmental Analysis",
       titleStyle: {
-        fontSize: "32px",
+        fontSize: "40px",
         textAlign: "center",
       },
       fileName: "DataScienceImg",
@@ -102,7 +102,7 @@ const skills = {
     {
       title: "Cartography & Geospatial Analysis",
       titleStyle: {
-        fontSize: "32px",
+        fontSize: "40px",
         textAlign: "center",
       },
       fileName: "FullStackImg",
@@ -195,27 +195,39 @@ const competitiveSites = {
 const degrees = {
   degrees: [
     {
-      title: "Indian Institute of Information Technology Kurnool",
-      subtitle: "B.Tech. in Computer Engineering",
+      title: "University of British Columbia",
+      subtitle: "Master of Geomatics for Environmental Management (MGEM)",
       logo_path: "iiitk_logo.png",
       alt_name: "IIITDM Kurnool",
-      duration: "2016 - 2020",
+      duration: "2025 - 2026",
       descriptions: [
-        "⚡ I have studied basic software engineering subjects like DS, Algorithms, DBMS, OS, CA, AI etc.",
-        "⚡ Apart from this, I have done courses on Deep Learning, Data Science, Cloud Computing and Full Stack Development.",
-        "⚡ I was selected for Merit cum Means Scholarship which is given to top 10% of students in college. I have received award from respected director for consistently best performance in academics.",
+        "⚡ Developed advanced geospatial programming skills through applied coursework, using Python for spatial data analysis and automation and R for remote sensing analysis and statistical modeling.",
+        "⚡ Gained hands-on experience with GIS technologies and methodologies, including cloud-based platforms, spatial data science workflows, and environmental monitoring techniques.",
+        "⚡ Completed a capstone project leveraging GPS location tracking data to model and forecast cattle habitat preferences, generating actionable insights for rangeland management and conservation planning.",
       ],
     },
     {
-      title: "Indiana University Bloomington",
-      subtitle: "M.S. in Computer Science",
+      title: "University of British Columbia",
+      subtitle: "Bachelor of Arts in Environment and Sustainability, Minor in GIS",
       logo_path: "iu_logo.png",
       alt_name: "Indiana University Bloomington",
-      duration: "2021 - 2023",
+      duration: "2022 - 2025",
       descriptions: [
-        "⚡ I have taken varity of courses related to Artificial Intelligence which correspond to Explainable AI, Graph Machine Learning, Computer Vision etc.",
-        "⚡ Apart from this, I have also done research assistantship. As part of it, I have worked on creating new algorithms in Graph ML and Network Science.",
-        "⚡ During my time at university, I was also associated with multimedia department. As part of it, I have worked on some documentry films and interviews.",
+        "⚡ Built a foundational understanding of environmental management strategies, sustainability frameworks, and policy development, exploring how governance and planning shape environmental outcomes.",
+        "⚡ Gained introductory knowledge in GIS and spatial thinking, establishing the groundwork for further technical development in geospatial analysis and mapping.",
+        "⚡ Studied core concepts in biogeography, ecology, and species diversity, developing an understanding of how environmental systems function and how biodiversity is distributed across landscapes.",
+      ],
+    },
+    {
+      title: "University of Alberta",
+      subtitle: "Bachelor of Commerce in Business Economics and Law",
+      logo_path: "iu_logo.png",
+      alt_name: "Indiana University Bloomington",
+      duration: "2015 - 2019",
+      descriptions: [
+        "⚡ Developed a broad understanding of how businesses operate, spanning accounting, marketing, and economics, building a well-rounded foundation in commercial thinking and decision-making.",
+        "⚡ Gained working knowledge of core business disciplines including financial principles and business communication, with experience presenting complex information clearly to professional audiences.",
+        "⚡ Built specialized knowledge in contract law and international business law, developing an understanding of the legal frameworks that govern commercial relationships and global trade.",
       ],
     },
   ],
