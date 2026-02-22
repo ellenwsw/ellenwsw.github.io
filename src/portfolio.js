@@ -55,12 +55,16 @@ const socialMediaLinks = [
 const skills = {
   data: [
     {
-      title: "GIS & Data Analysis",
+      title: "Remote Sensing & Environmental Analysis",
+      titleStyle: {
+        fontSize: "32px",
+        textAlign: "center",
+      },
       fileName: "DataScienceImg",
       skills: [
-        "⚡ Developing highly scalable production ready models for various deeplearning and statistical use cases",
-        "⚡ Experience of working with Computer Vision and NLP projects",
-        "⚡ Complex quantitative modelling for dynamic forecasting and time series analysis",
+        "⚡ Processing and analyzing satellite and aerial imagery using Google Earth Engine and ESRI platforms to monitor land cover change, vegetation health, and other environmental indicators at scale",
+        "⚡ Automating geospatial and environmental data workflows using Python and R, from raw data ingestion through to statistical analysis and visualization",
+        "⚡ Conducting field surveys to collect ground-truth environmental data, combining in-situ observations with remote sensing outputs to validate and enrich spatial analysis",
       ],
       softwareSkills: [
         {
@@ -73,92 +77,60 @@ const skills = {
         },
         {
           skillName: "R",
-          fontAwesomeClassname: "ion-logo-python",
+          fontAwesomeClassname: "simple-icons:r",
           style: {
             backgroundColor: "transparent",
             color: "#3776AB",
           },
         },
+        {
+          skillName: "ESRI",
+          fontAwesomeClassname: "simple-icons:esri",
+          style: {
+            color: "#000000",
+          },
+        },
+        {
+          skillName: "Google Earth Engine",
+          fontAwesomeClassname: "simple-icons:googleearthengine",
+          style: {
+            color: "#4285F4",
+          },
+        },
       ],
     },
     {
-      title: "Full Stack Development",
+      title: "Cartography & Geospatial Analysis",
+      titleStyle: {
+        fontSize: "32px",
+        textAlign: "center",
+      },
       fileName: "FullStackImg",
       skills: [
-        "⚡ Building responsive website front end using React-Redux",
-        "⚡ Developing mobile applications using Flutter, React Native and solo android apps using Kotlin",
-        "⚡ Creating application backend in Node, Express & Flask",
+        "⚡ Designing clear, visually compelling maps and infographics using Adobe Illustrator to communicate spatial data to both technical and general audiences",
+        "⚡ Performing spatial queries, geoprocessing, and geographic modeling using ArcGIS and QGIS",
+        "⚡ Combining cartographic design principles with analytical tools to produce publication-ready map products and spatial reports",
       ],
       softwareSkills: [
         {
-          skillName: "HTML5",
-          fontAwesomeClassname: "simple-icons:html5",
+          skillName: "Adobe Illustrator",
+          fontAwesomeClassname: "vscode-icons:file-type-ai",
           style: {
-            color: "#E34F26",
+            color: "#FF9A00",
           },
         },
         {
-          skillName: "CSS3",
-          fontAwesomeClassname: "fa-css3",
+          skillName: "ArcGIS Pro",
+          fontAwesomeClassname: "simple-icons:arcgis",
           style: {
-            color: "#1572B6",
+            color: "#2C7AC3",
           },
         },
         {
-          skillName: "Sass",
-          fontAwesomeClassname: "simple-icons:sass",
+          skillName: "QGIS",
+          fontAwesomeClassname: "simple-icons:qgis",
           style: {
-            color: "#CC6699",
-          },
-        },
-        {
-          skillName: "JavaScript",
-          fontAwesomeClassname: "simple-icons:javascript",
-          style: {
-            backgroundColor: "#000000",
-            color: "#F7DF1E",
-          },
-        },
-        {
-          skillName: "ReactJS",
-          fontAwesomeClassname: "simple-icons:react",
-          style: {
-            color: "#61DAFB",
-          },
-        },
-        {
-          skillName: "NodeJS",
-          fontAwesomeClassname: "devicon-plain:nodejs-wordmark",
-          style: {
-            color: "#339933",
-          },
-        },
-        {
-          skillName: "NPM",
-          fontAwesomeClassname: "simple-icons:npm",
-          style: {
-            color: "#CB3837",
-          },
-        },
-        {
-          skillName: "Yarn",
-          fontAwesomeClassname: "simple-icons:yarn",
-          style: {
-            color: "#2C8EBB",
-          },
-        },
-        {
-          skillName: "Gatsby",
-          fontAwesomeClassname: "simple-icons:gatsby",
-          style: {
-            color: "#663399",
-          },
-        },
-        {
-          skillName: "Flutter",
-          fontAwesomeClassname: "simple-icons:flutter",
-          style: {
-            color: "#02569B",
+            color: "#589632",
           },
         },
       ],
