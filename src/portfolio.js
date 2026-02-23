@@ -197,8 +197,8 @@ const degrees = {
     {
       title: "University of British Columbia",
       subtitle: "Master of Geomatics for Environmental Management (MGEM)",
-      logo_path: "MGEM_logo.png",
-      alt_name: "IIITDM Kurnool",
+      logo_path: "MGEM_logo.jpg",
+      alt_name: "UBC MGEM",
       duration: "2025 - 2026",
       descriptions: [
         "⚡ Developed advanced geospatial programming skills through applied coursework, using Python for spatial data analysis and automation and R for remote sensing analysis and statistical modeling.",
@@ -208,9 +208,10 @@ const degrees = {
     },
     {
       title: "University of British Columbia",
-      subtitle: "Bachelor of Arts in Environment and Sustainability, Minor in GIS",
+      subtitle:
+        "Bachelor of Arts in Environment and Sustainability, Minor in GIS",
       logo_path: "ubc_logo.png",
-      alt_name: "Indiana University Bloomington",
+      alt_name: "University of British Columbia",
       duration: "2022 - 2025",
       descriptions: [
         "⚡ Built a foundational understanding of environmental management strategies, sustainability frameworks, and policy development, exploring how governance and planning shape environmental outcomes.",
@@ -222,7 +223,7 @@ const degrees = {
       title: "University of Alberta",
       subtitle: "Bachelor of Commerce in Business Economics and Law",
       logo_path: "ua_logo_green_rgb.png",
-      alt_name: "Indiana University Bloomington",
+      alt_name: "University of Alberta",
       duration: "2015 - 2019",
       descriptions: [
         "⚡ Developed a broad understanding of how businesses operate, spanning accounting, marketing, and economics, building a well-rounded foundation in commercial thinking and decision-making.",

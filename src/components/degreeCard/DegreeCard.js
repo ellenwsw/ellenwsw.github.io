@@ -2,6 +2,31 @@ import React, { Component } from "react";
 import "./DegreeCard.css";
 import { Fade, Flip } from "react-reveal";
 
+const degreeLogoImages = require.context(
+  "../../assets/images",
+  false,
+  /\.(png|jpe?g|svg|gif|webp)$/
+);
+
+const getDegreeLogoPath = (logoPath) => {
+  if (!logoPath) {
+    return "";
+  }
+
+  if (logoPath.startsWith("http://") || logoPath.startsWith("https://")) {
+    return logoPath;
+  }
+
+  const logoFileName = logoPath.split(/[\\/]/).pop();
+  const logoKey = `./${logoFileName}`;
+
+  if (degreeLogoImages.keys().includes(logoKey)) {
+    return degreeLogoImages(logoKey);
+  }
+
+  return logoPath.replace(/\\/g, "/");
+};
+
 class DegreeCard extends Component {
   render() {
     const degree = this.props.degree;
@@ -17,7 +42,7 @@ class DegreeCard extends Component {
                   maxHeight: "100%",
                   transform: "scale(0.9)",
                 }}
-                src={require(`../../assets/images/${degree.logo_path}`)}
+                src={getDegreeLogoPath(degree.logo_path)}
                 alt={degree.alt_name}
               />
             </div>
