@@ -12,6 +12,12 @@ import "./Archive.css";
 
 const uniqueValues = (values) => [...new Set(values)].sort();
 
+const toPrettyTagLabel = (tag) =>
+  tag
+    .split("-")
+    .map((part) => (part ? part[0].toUpperCase() + part.slice(1) : ""))
+    .join(" ");
+
 export default function Archive({ theme }) {
   const [searchTerm, setSearchTerm] = useState("");
   const [selectedTag, setSelectedTag] = useState("all");
@@ -19,10 +25,19 @@ export default function Archive({ theme }) {
     archiveSettings.includePrivateByDefault
   );
 
-  const availableTags = useMemo(
-    () => uniqueValues(archivePosts.flatMap((post) => post.tags)),
-    []
-  );
+  const availableTags = useMemo(() => {
+    const tagValues = uniqueValues(archivePosts.flatMap((post) => post.tags));
+
+    return tagValues.map((value) => {
+      const matchedPost = archivePosts.find((post) =>
+        post.tags.includes(value)
+      );
+      return {
+        value,
+        label: matchedPost?.tagLabels?.[value] || toPrettyTagLabel(value),
+      };
+    });
+  }, []);
 
   const filteredPosts = useMemo(() => {
     return archivePosts
@@ -59,11 +74,21 @@ export default function Archive({ theme }) {
     const orderedThemes = [
       ...themeOrder.filter((entry) => grouped[entry]),
       ...Object.keys(grouped).filter((entry) => !themeOrder.includes(entry)),
-    ];
+    ].sort((a, b) => {
+      const latestInA = Math.max(
+        ...grouped[a].map((post) => new Date(post.date))
+      );
+      const latestInB = Math.max(
+        ...grouped[b].map((post) => new Date(post.date))
+      );
+      return latestInB - latestInA;
+    });
 
     return orderedThemes.map((themeName) => ({
       themeName,
-      posts: grouped[themeName],
+      posts: grouped[themeName].sort(
+        (a, b) => new Date(b.date) - new Date(a.date)
+      ),
     }));
   }, [filteredPosts]);
 
@@ -97,8 +122,8 @@ export default function Archive({ theme }) {
           >
             <option value="all">All tags</option>
             {availableTags.map((tag) => (
-              <option key={tag} value={tag}>
-                {tag}
+              <option key={tag.value} value={tag.value}>
+                {tag.label}
               </option>
             ))}
           </select>

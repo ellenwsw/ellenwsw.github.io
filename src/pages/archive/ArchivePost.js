@@ -5,7 +5,14 @@ import Footer from "../../components/footer/Footer";
 import TopButton from "../../components/topButton/TopButton";
 import { archivePosts } from "../../data/archivePosts";
 import { simpleMarkdownToElements } from "../../utils/simpleMarkdown";
+
 import "./Archive.css";
+
+const toPrettyTagLabel = (tag) =>
+  tag
+    .split("-")
+    .map((part) => (part ? part[0].toUpperCase() + part.slice(1) : ""))
+    .join(" ");
 
 export default function ArchivePost({ theme }) {
   const { slug } = useParams();
@@ -73,7 +80,7 @@ export default function ArchivePost({ theme }) {
               <div className="chip-row">
                 {post.tags.map((tag) => (
                   <span key={`${post.slug}-tag-${tag}`} className="chip">
-                    {tag}
+                    {post.tagLabels?.[tag] || toPrettyTagLabel(tag)}
                   </span>
                 ))}
               </div>

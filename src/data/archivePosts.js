@@ -5,80 +5,93 @@ export const archiveSettings = {
   includePrivateByDefault: false,
 };
 
+const toTag = (value) =>
+  value
+    .toLowerCase()
+    .trim()
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-+|-+$/g, "");
+
+const withAutoTags = (post) => {
+  const autoTagSources = [post.theme, ...(post.keySkills || [])];
+  const autoTagEntries = autoTagSources
+    .map((source) => ({ value: toTag(source), label: source }))
+    .filter((entry) => entry.value);
+
+  const manualTagEntries = (post.tags || [])
+    .map((entry) => {
+      if (typeof entry === "string") {
+        return {
+          value: toTag(entry),
+          label: post.tagLabels?.[toTag(entry)] || entry,
+        };
+      }
+
+      const value = toTag(entry.value || entry.label || "");
+      return {
+        value,
+        label: entry.label || entry.value || value,
+      };
+    })
+    .filter((entry) => entry.value);
+
+  const mergedTagLabels = [...autoTagEntries, ...manualTagEntries].reduce(
+    (acc, entry) => {
+      acc[entry.value] = entry.label;
+      return acc;
+    },
+    {}
+  );
+
+  return {
+    ...post,
+    tags: Object.keys(mergedTagLabels),
+    tagLabels: mergedTagLabels,
+  };
+};
+
 export const archivePosts = [
-  {
-    slug: "gis-capstone-habitat-modeling",
-    title: "GIS Capstone: Cattle Habitat Preference Modeling",
-    date: "2026-01-12",
-    degree: "Master of Geomatics for Environmental Management (MGEM)",
-    course: "Capstone Project",
-    theme: "Geospatial Modeling",
-    keySkills: ["R", "ArcGIS Pro", "Cartography", "Spatial Modeling"],
-    tags: ["habitat", "gps-tracking", "rangeland", "modeling"],
-    markdownPath: "/archive-posts/gis-capstone-habitat-modeling.md",
-    outputs: [
-      {
-        label: "Seasonal Habitat Map Atlas",
-        note:
-          "Static cartographic deliverable showcased in the post narrative.",
-      },
-      {
-        label: "Methods Note",
-        note: "Concise methods summary written for mixed technical audiences.",
-      },
-    ],
-    isPrivate: false,
-  },
-  {
-    slug: "remote-sensing-land-cover-change",
-    title: "Remote Sensing Studio: Land Cover Change Detection",
-    date: "2025-11-03",
-    degree: "Master of Geomatics for Environmental Management (MGEM)",
-    course: "Remote Sensing Studio",
-    theme: "Remote Sensing",
+  withAutoTags({
+    slug: "pedestrians-collisions-toronto",
+    title:
+      "Analysis of Pedestrians-Involved Collisions In the Toronto Downtown Area",
+    date: "2022-12-08",
+    degree: "BA Environment & Sustainability",
+    course: "GIS Project",
+    theme: "Geospatial Analysis",
     keySkills: [
-      "Google Earth Engine",
+      "ArcGIS Pro",
+      "QGIS",
+      "R",
       "Python",
-      "Change Detection",
+      "Academic Writing",
+      "Research",
+      "Teamwork",
+      "Google Earth Engine",
+      "Cartography",
       "Data Visualization",
     ],
-    tags: ["landsat", "sentinel", "ndvi", "change-detection"],
-    markdownPath: "/archive-posts/remote-sensing-land-cover-change.md",
+    tags: [
+      {
+        value: "ba-environment-sustainability",
+        label: "BA Environment & Sustainability",
+      },
+    ],
+    markdownPath: "/archive-posts/pedestrians-collisions-toronto.md",
     outputs: [
       {
-        label: "NDVI Trend Visuals",
+        label: "Collision Density Maps",
         note:
-          "Time-series figures interpreting vegetation trends over study years.",
+          "Population density and collision-density comparison maps for Toronto and downtown focus areas.",
       },
       {
-        label: "Priority Zone Map",
-        note: "Map product summarizing highest-change zones for follow-up.",
+        label: "Road-Type and Signal Analysis Figures",
+        note:
+          "Charts and maps summarizing collision risk by arterial class, time, and signalized intersections.",
       },
     ],
     isPrivate: false,
-  },
-  {
-    slug: "policy-gis-decision-support-private",
-    title: "Policy + GIS Decision Support (Private Draft)",
-    date: "2025-10-08",
-    degree: "BA Environment & Sustainability",
-    course: "Environmental Policy Studio",
-    theme: "Policy & Planning",
-    keySkills: ["Policy Analysis", "Scenario Design", "GIS"],
-    tags: ["policy", "decision-support", "scenario"],
-    markdownPath: "/archive-posts/policy-gis-decision-support-private.md",
-    outputs: [
-      {
-        label: "Scenario Comparison Matrix",
-        note: "Draft matrix pending review.",
-      },
-    ],
-    isPrivate: true,
-  },
+  }),
 ];
 
-export const themeOrder = [
-  "Geospatial Modeling",
-  "Remote Sensing",
-  "Policy & Planning",
-];
+export const themeOrder = ["Geospatial Analysis"];
