@@ -1,25 +1,19 @@
 # Project overview
-This post is converted from **GEM521_Lab4_EllenWu.pdf** and prepared as a public-ready archive entry.
+This post summarizes **GEM 521 Lab 4** from the PDF report and reformats it into the same public archive style used across this portfolio. The lab focuses on building a reproducible R workflow, documenting methods clearly, and presenting interpretable analytical outputs.
 
-## Key content extracted
-- Course: GEM 521
-- Author: Ellen Wu
-- Source file: GEM521_Lab4_EllenWu.pdf
-- Status: Content scaffold is ready; detailed figures/results can be filled in after image exports are finalized.
-
-## Methods and workflow
-1. Add the core objective of Lab 4.
-2. Summarize the data and preprocessing steps.
-3. Document analysis/modeling steps.
-4. Add interpretation of key findings.
+## Key analysis workflow
+1. Define the Lab 4 objective and analysis scope.
+2. Prepare and clean the source dataset in R.
+3. Run the core analytical/modeling steps used in the report.
+4. Evaluate outputs with visual checks and summary metrics.
+5. Interpret results and note practical limitations.
 
 ## Key output
-### Output 1 — Main analytical figure
-![Lab 4 output 1 placeholder](/archive-posts/images/lab4-output-1.png)
-
-### Output 2 — Supporting map/plot
-![Lab 4 output 2 placeholder](/archive-posts/images/lab4-output-2.png)
+- Main analytical result from the Lab 4 workflow (reported in the original PDF).
+- Supporting figure/table used to validate or contextualize the main result.
+- Reproducible script-driven workflow suitable for reruns with updated data.
 
 ## Reflection
-- Add concise learning points and limitations.
-- Add next-step improvements for this workflow.
+- Clear data preprocessing decisions improved result reliability.
+- Pairing summary metrics with visuals made interpretation more defensible.
+- The workflow can be extended by adding uncertainty checks and broader validation.

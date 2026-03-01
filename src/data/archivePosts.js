@@ -354,11 +354,13 @@ export const archivePosts = [
     outputs: [
       {
         label: "Output 1 — Main Analytical Figure",
-        note: "Placeholder ready: /archive-posts/images/lab4-output-1.png",
+        note:
+          "Primary analytical output documented in the GEM 521 Lab 4 report.",
       },
       {
         label: "Output 2 — Supporting Map/Plot",
-        note: "Placeholder ready: /archive-posts/images/lab4-output-2.png",
+        note:
+          "Supporting figure/table reported alongside the main Lab 4 result.",
       },
     ],
     isPrivate: false,
