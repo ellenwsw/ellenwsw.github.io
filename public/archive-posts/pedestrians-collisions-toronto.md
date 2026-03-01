@@ -1,4 +1,4 @@
-# Project overview
+# Project Overview
 Collaborating with my classmates Kenny Zheng and Tom Wang, we utilized geoprocessing tools and Model Builder in ArcGIS Pro to analyze pedestrian-involved collisions in downtown Toronto from 2015 to 2020. Our goal was to identify the primary causes and locations of these collisions and propose potential solutions to reduce their frequency.
 
 ## 1. Introduction

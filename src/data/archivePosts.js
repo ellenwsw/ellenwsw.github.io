@@ -74,10 +74,6 @@ export const archivePosts = [
         value: "ba-environment-sustainability",
         label: "BA Environment & Sustainability",
       },
-      {
-        value: "envi",
-        label: "ENVI",
-      },
     ],
     markdownPath: "/archive-posts/pedestrians-collisions-toronto.md",
     outputs: [
