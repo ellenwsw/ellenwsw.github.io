@@ -86,6 +86,35 @@ export const archivePosts = [
     isPrivate: false,
   }),
   withAutoTags({
+    slug: "stream-management",
+    title: "Riparian Management Area Delineation in the Nahmint Watershed",
+    date: "2026-02-13",
+    degree: "Master of Geomatics for Environmental Management",
+    course: "GEM 511 Advanced GIS for Environmental Management",
+    theme: "Hydrological Modeling",
+    keySkills: [
+      "ArcGIS Pro",
+      "DEM Processing",
+      "Hydrological Modeling",
+      "Forest Management",
+    ],
+    tags: [
+      {
+        value: "mgem",
+        label: "MGEM",
+      },
+    ],
+    markdownPath: "/archive-posts/stream-management.md",
+    outputs: [
+      {
+        label: "Riparian Management Map",
+        note:
+          "A map product delineating reserve and management buffers for BC stream classes across the Nahmint watershed.",
+      },
+    ],
+    isPrivate: false,
+  }),
+  withAutoTags({
     slug: "stream-network-analysis",
     title:
       "Pacific Salmon Habitat Accessibility Mapping from Stream-Network Analysis",
