@@ -23,4 +23,4 @@ Clip both habitat layers to your chosen conservation unit. The final map panel s
 # Reflection
 - This project demonstrated how a single DEM can generate an entire stream network through sequential raster operations (flow direction → flow accumulation → stream links), reinforcing how foundational data quality cascades through every downstream output.
 - Understood the significance of the flow accumulation threshold in defining what counts as a "stream," and how this parameter choice directly affects network density and analytical results.
-- Developed practical experience with topology as a quality control tool, using intersection rules to precisely locate dam and ocean junctions rather than manually identifying them.
+- Developed practical experience with topology as a quality control tool, using intersection rules to precisely locate dam and ocean junctions rather than manually identifying them. This is aligned with the QA/QC process at my current work as a GIS technician with PWSBC.

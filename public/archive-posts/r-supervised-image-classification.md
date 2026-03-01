@@ -9,23 +9,24 @@ This project applies supervised image classification on Landsat 9 surface reflec
 ## Workflow Summary
 1. Load and inspect the multi-band Landsat image.
 2. Import and validate the land-cover training polygons.
-3. Split polygons by class into 70% training and 30% validation.
+3. Split polygons by class into training and validation.
 4. Extract pixel values by polygon and train a Maximum Likelihood classifier.
 5. Predict land-cover classes for the full scene.
 6. Validate predictions and compute overall, producer, and user accuracy.
 
 ## Key Visual Outputs
-### RGB composite of Landsat imagery
-![RGB composite of Landsat scene](/archive-posts/images/unnamed-chunk-4-1.png)
 
 ### Delineated training polygons by land-cover class
-![Training polygons over Landsat imagery](/archive-posts/images/unnamed-chunk-5-1.png)
+![Training polygons over Landsat imagery](/archive-posts/images/supervised_classification_sampling.png)
 
 ### Training vs. validation polygon split
-![Training and validation polygon sets](/archive-posts/images/unnamed-chunk-7-1.png)
+![Training and validation polygon sets](/archive-posts/images/training_validation_dis.png)
+
+### Accuracy Summary
+![Accuracy summary table](/archive-posts/images/accuracy_table.png)
 
 ### Classified land-cover map
-![Supervised land-cover classification result](/archive-posts/images/unnamed-chunk-17-1.png)
+![Supervised land-cover classification result](/archive-posts/images/classified_map.png)
 
 ## Reflection
 - This project strengthened my practical understanding of how training-data quality drives classification performance.

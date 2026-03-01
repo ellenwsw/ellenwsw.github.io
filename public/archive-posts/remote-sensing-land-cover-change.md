@@ -2,7 +2,7 @@
 This project is the culmination of my GEOS 373: Remote Sensing course, which was taken in 2023 Winter Term 2 of my undergrad period. Collaborating with my classmates Jinzhou Liu, Zijin Xiao, Jason Yang and Jie En Yang, we utilized ENVI to process Landsat imagery for supervised classification and analyze how the vertical stratification on the Southern Slope of Mount Everest has changed for the last 10 years under climate change.
 
 ## Key Output - Academic Poster
-The details about the project is illustrated in the academic poster below.
+The detailed workflow, results and discussion of the project are displayed on the academic poster below.
 ![Remote Sensing Change Detection Poster](/archive-posts/images/vertical- stratification-veg-Mount.Everest.png)
 
 

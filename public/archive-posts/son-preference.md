@@ -9,6 +9,8 @@ The sex ratio at birth is the number of male births per 100 female births. Witho
 - Second, I used Excel to filter the data and create a subset focusing on the sex ratio at birth.
 - Then, I imported the data into ArcGIS Pro to perform the data analysis and create the maps.
 - Finally, I exported the three layouts to Adobe Illustrator to refine the appearance of the text.
+
+## Key Output
 ![China's son-preference situation by province](/archive-posts/images/son-preference-map.png)
 
 # Reflection

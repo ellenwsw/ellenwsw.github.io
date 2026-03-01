@@ -16,7 +16,7 @@ The Fritillaria affinis herbarium records were collected and archived at the UBC
 We imported the merged dataset into R for statistical analysis. A linear regression model was applied to test for correlations between each selected climate variable and the DOY of collection, assessing how climate conditions influence the phenology of Fritillaria affinis.
 
 ## Key Output - Academic Poster
-The details about the project is illustrated in the academic poster below.
+The detailed workflow, results and discussion of the project are displayed on the academic poster below.
 ![Decoding Chocolate Lily's Climate Response](/archive-posts/images/flower-power.png)
 
 # Reflection

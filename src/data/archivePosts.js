@@ -1,7 +1,7 @@
 export const archiveSettings = {
   title: "Academic Archive",
   subtitle:
-    "A searchable archive of course/degree capstone projects, outputs, and reflections grouped by theme and demonstrated skills.",
+    "A searchable archive of course projects, lab outputs, and reflections grouped by theme and demonstrated skills.",
   includePrivateByDefault: false,
 };
 

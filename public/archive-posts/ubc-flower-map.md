@@ -5,6 +5,8 @@ Using tree inventory data from UBC, I created a campus-wide map visualizing the 
 - Data collection: data was obtained from the PostgreSQL database utilizing SQL commands.
 - Data cleaning: extracted the data useful for the purpose of the map, and considered the audience of the map.
 - Visualization: in addition to the key map features, map creation also needs to consider map audience and the visual effects.
+
+## Key Output
 ![UBC spring flower map](/archive-posts/images/ubc-flower-map.png)
 
 # Reflection
