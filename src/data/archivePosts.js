@@ -88,7 +88,7 @@ export const archivePosts = [
     degree: "Master of Geomatics for Environmental Management",
     course: "GIS & Cartography",
     theme: "Cartography",
-    keySkills: ["ArcGIS Pro", "PostgreSQL", "SQL", "Map Design"],
+    keySkills: ["ArcGIS Pro", "PostgreSQL", "SQL", "Cartography"],
     tags: [
       {
         value: "mgem",
@@ -112,7 +112,7 @@ export const archivePosts = [
     degree: "BA Environment & Sustainability",
     course: "GEOS 407 Vegetation Dynamics",
     theme: "Ecological Data Analysis",
-    keySkills: ["R", "ClimateNA", "Phenology", "Statistical Modeling"],
+    keySkills: ["R", "ClimateNA", "Phenology"],
     tags: [
       {
         value: "ba-environment-sustainability",
@@ -137,7 +137,7 @@ export const archivePosts = [
     degree: "BA Environment & Sustainability",
     course: "GEOS 373 Remote Sensing",
     theme: "Remote Sensing",
-    keySkills: ["ENVI", "Landsat", "Change Detection", "Team Research"],
+    keySkills: ["ENVI", "Landsat", "Change Detection", "Teamwork"],
     tags: [
       {
         value: "ba-environment-sustainability",

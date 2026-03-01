@@ -7,13 +7,13 @@ The flowering date of Fritillaria affinis (chocolate lily) is getting earlier in
 ## Methods
 To test our hypothesis that temperature anomalies influence the flowering time of Fritillaria affinis species, we will analyze previously published herbarium data alongside climate data.
 1. Data sources:
-We will use Fritillaria affinis specimen data from the UBC Herbarium, specifically the day of year of collection, latitude and longitude, and phenological stage (flowering and potentially fruiting or not). This dataset has been previously analyzed for phenological stages by UBC GEOS 407 students. Climate data corresponding to each specimen’s collection year and location will be obtained from ClimateNA, including key variables such as temperature and precipitation.
+We used Fritillaria affinis specimen data from the UBC Herbarium, specifically the day of year of collection, latitude and longitude, and phenological stage (flowering and potentially fruiting or not). This dataset has been previously analyzed for phenological stages by UBC GEOS 407 students. Climate data corresponding to each specimen’s collection year and location were obtained from ClimateNA, including key variables such as temperature and precipitation.
 
 2. Data collection and processing:
-The Fritillaria affinis herbarium records were collected and archived at the UBC Herbarium. Species metadata, such as DOY and phenological stage were recorded at the time of collection or analyzed and added at a later time. ClimateNA provides high-resolution climate data based on geographical coordinates and historic climate models. We will extract relevant climate variables corresponding to the collection year and location of each herbarium specimen. These datasets will be merged into a single CSV file for analysis.
+The Fritillaria affinis herbarium records were collected and archived at the UBC Herbarium. Species metadata, such as DOY and phenological stage were recorded at the time of collection or analyzed and added at a later time. ClimateNA provides high-resolution climate data based on geographical coordinates and historic climate models. We extracted relevant climate variables corresponding to the collection year and location of each herbarium specimen. These datasets will be merged into a single CSV file for analysis.
 
 3. Data analysis:
-We will import the merged dataset into R for statistical analysis. A linear regression model will be applied to test for correlations between each selected climate variable and the DOY of collection, assessing how climate conditions influence the phenology of Fritillaria affinis.
+We imported the merged dataset into R for statistical analysis. A linear regression model was applied to test for correlations between each selected climate variable and the DOY of collection, assessing how climate conditions influence the phenology of Fritillaria affinis.
 
 ## Key Output - Academic Poster
 The details about the project is illustrated in the academic poster below.
