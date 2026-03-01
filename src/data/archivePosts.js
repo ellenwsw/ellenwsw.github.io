@@ -52,6 +52,60 @@ const withAutoTags = (post) => {
 
 export const archivePosts = [
   withAutoTags({
+    slug: "remote-sensing-land-cover-change",
+    title:
+      "Climate-Driven Change in Vertical Vegetation Stratification on Mount Everest",
+    date: "2024-04-10",
+    degree: "BA Environment & Sustainability",
+    course: "GEOS 373 Remote Sensing",
+    theme: "Remote Sensing",
+    keySkills: ["ENVI", "Landsat", "Change Detection", "Team Research"],
+    tags: [
+      {
+        value: "ba-environment-sustainability",
+        label: "BA Environment & Sustainability",
+      },
+    ],
+    markdownPath: "/archive-posts/remote-sensing-land-cover-change.md",
+    outputs: [
+      {
+        label: "Academic Poster",
+        note:
+          "Poster visualizing multi-temporal Landsat analysis and vegetation-zone change on Mount Everest's southern slope.",
+      },
+    ],
+    isPrivate: false,
+  }),
+  withAutoTags({
+    slug: "son-preference",
+    title: "Mapping Son Preference Patterns in China Using 2020 Census Data",
+    date: "2024-04-08",
+    degree: "BA Environment & Sustainability",
+    course: "Cartography",
+    theme: "Cartography",
+    keySkills: [
+      "ArcGIS Pro",
+      "Data Visualization",
+      "Thematic Mapping",
+      "Adobe Illustrator",
+    ],
+    tags: [
+      {
+        value: "ba-environment-sustainability",
+        label: "BA Environment & Sustainability",
+      },
+    ],
+    markdownPath: "/archive-posts/son-preference.md",
+    outputs: [
+      {
+        label: "Provincial Son-Preference Map",
+        note:
+          "A province-level thematic map showing sex-ratio-at-birth patterns for second and later children in China.",
+      },
+    ],
+    isPrivate: false,
+  }),
+  withAutoTags({
     slug: "pedestrians-collisions-toronto",
     title:
       "Analysis of Pedestrians-Involved Collisions In the Toronto Downtown Area",
@@ -92,4 +146,8 @@ export const archivePosts = [
   }),
 ];
 
-export const themeOrder = ["Geospatial Analysis"];
+export const themeOrder = [
+  "Remote Sensing",
+  "Cartography",
+  "Geospatial Analysis",
+];
