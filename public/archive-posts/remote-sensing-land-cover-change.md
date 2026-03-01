@@ -1,18 +1,10 @@
-# Remote Sensing Studio: Land Cover Change Detection
+# Project overview
+This project is the culmination of my GEOS 373: Remote Sensing course, which was taken in 2023 Winter Term 2 of my undergrad period. Collaborating with my classmates Jinzhou Liu, Zijin Xiao, Jason Yang and Jie En Yang, we utilized ENVI to process remote sensing data and analyze how the vertical stratification on the Southern Slope of Mount Everest has changed for the last 10 years under climate change.
 
-## Project overview
-This project used Landsat and Sentinel imagery to evaluate land cover change over a multi-year period. I focused on identifying vegetation loss hotspots and presenting uncertainty clearly.
+## Key output - Academic Poster
+![Remote Sensing Change Detection Poster](/archive-posts/images/vertical- stratification-veg-Mount.Everest.png)
 
-## Workflow
-1. Built image collections and cloud masks in Google Earth Engine.
-2. Generated yearly composites and NDVI-based indicators.
-3. Compared classification outputs across years.
-4. Prepared final map products and summary graphics.
-
-## Key outputs
-- Time-series NDVI trend visualizations.
-- Change map highlighting high-priority zones.
-- Brief interpretation memo with caveats and next steps.
 
 ## Reflection
-I improved my ability to communicate remote sensing uncertainty and avoid over-claiming from moderate-resolution imagery.
+- By leveraging multi-temporal Landsat data and utilizing ENVI, the analysis explored how glacial coverage has shifted, revealing the patterns of ice loss driven by climate change. 
+- The project deepened my understanding of how remote sensing techniques can be applied to monitor high-altitude cryospheric environments where ground-based data collection is limited or impossible.
