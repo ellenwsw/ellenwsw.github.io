@@ -24,6 +24,7 @@ const greeting = {
   subTitle:
     "A soon-to-be UBC MGEM graduate, a multi-disciplinary lifelong learner, a GISer, a trilingual, and a feminist.",
   portfolio_repository: "https://github.com/ellenwsw/E-Portfolio",
+  resumeLink: "/resume",
 };
 
 const socialMediaLinks = [
@@ -110,7 +111,7 @@ const skills = {
         "⚡ Designing clear, visually compelling maps and infographics using Adobe Illustrator to communicate spatial data to both technical and general audiences",
         "⚡ Performing spatial queries, geoprocessing, and geographic modeling using ArcGIS and QGIS",
         "⚡ Combining cartographic design principles with analytical tools to produce publication-ready map products and spatial reports",
-        "⚡ Presenting spatial findings to diverse audiences, translating complex geospatial information into clear, accessible reports that support informed decision-making"
+        "⚡ Presenting spatial findings to diverse audiences, translating complex geospatial information into clear, accessible reports that support informed decision-making",
       ],
       softwareSkills: [
         {
@@ -235,14 +236,27 @@ const degrees = {
   ],
 };
 
+const publications = {
+  publications: [
+    {
+      title: "MGEM Capstone: Cattle Habitat Preference Forecasting",
+      authors: "Ellen Wu",
+      venue: "UBC MGEM Capstone Project",
+      year: "2026",
+      description:
+        "A geospatial modeling project that uses GPS tracking data and environmental predictors to forecast cattle habitat preferences.",
+      link: "",
+    },
+  ],
+};
+
 const certifications = {
   certifications: [
     {
       title: "FME Form Basic",
       subtitle: "FME by Safe Software",
       logo_path: "fme_form_basic_logo.png",
-      certificate_link:
-        "https://verify.skilljar.com/c/t9zjifeu86w2",
+      certificate_link: "https://verify.skilljar.com/c/t9zjifeu86w2",
       alt_name: "FME Academy",
       color_code: "#8C151599",
     },
@@ -269,35 +283,37 @@ const experience = {
           location: "Abbotsford, B.C.",
           description: [
             "⚡Prepare agricultural water demand model (AWDM) input datasets for select areas of B.C. to specifications provided by the B.C. Ministry of Agriculture and Food.",
-            "⚡Conduct quality assurance on digital products and deliverables to ensure that technical standards are met."
+            "⚡Conduct quality assurance on digital products and deliverables to ensure that technical standards are met.",
           ],
-            color: "#000000",
+          color: "#000000",
         },
         {
           title: "GIS Technician, Co-op",
           company: "B.C. Ministry of Agriculture and Food",
-          company_url: "https://www2.gov.bc.ca/gov/content/governments/organizational-structure/ministries-organizations/ministries/agriculture",
+          company_url:
+            "https://www2.gov.bc.ca/gov/content/governments/organizational-structure/ministries-organizations/ministries/agriculture",
           logo_path: "BC_MinistryofAg_logo.png",
           duration: "September 2024 - December 2024",
           location: "Abbotsford, B.C.",
-          description:[
+          description: [
             "⚡Updated databases as remote sensing imagery information became available.",
             "⚡Translated, integrated and manipulated data from various sources and formats to ministry standards as required.",
-            "⚡Compiled and digitized source information for the creation of various resource themes, databases, spatial products and related models."
+            "⚡Compiled and digitized source information for the creation of various resource themes, databases, spatial products and related models.",
           ],
           color: "#234075",
         },
         {
           title: "Oral Practice Assistant (UBC Work Learn)",
           company: "Chinese Language Program, UBC Faculty of Arts",
-          company_url: "https://www2.gov.bc.ca/gov/content/governments/organizational-structure/ministries-organizations/ministries/agriculture",
+          company_url:
+            "https://www2.gov.bc.ca/gov/content/governments/organizational-structure/ministries-organizations/ministries/agriculture",
           logo_path: "ubc_logo.png",
           duration: "September 2023 - August 2024",
           location: "Vancouver, B.C.",
-          description:[
+          description: [
             "⚡Have organized and led over 20 training sessions for volunteers both in-person and virtually, imparting essential skills for conducting effective oral practice sessions with students.",
             "⚡Facilitated and moderated oral practice materials and activities across low, moderate, and high-level Chinese language courses.",
-            "⚡Served as a liaison between instructors, students, and volunteers, offering support in handling unforeseen situations. "
+            "⚡Served as a liaison between instructors, students, and volunteers, offering support in handling unforeseen situations. ",
           ],
           color: "#234075",
         },
@@ -346,6 +362,7 @@ export {
   skills,
   competitiveSites,
   degrees,
+  publications,
   certifications,
   experience,
   contactPageData,

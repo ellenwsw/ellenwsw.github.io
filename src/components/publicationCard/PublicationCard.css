@@ -1,0 +1,53 @@
+.publication-card {
+  border: 1px solid #d9dbdf;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px #d9dbdf;
+  overflow: hidden;
+  height: 100%;
+}
+
+.publication-card-header {
+  padding: 14px 16px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.publication-title {
+  margin: 0;
+  font-size: 20px;
+  font-family: "Google Sans Medium";
+}
+
+.publication-year {
+  font-size: 14px;
+  font-family: "Google Sans Regular";
+  white-space: nowrap;
+}
+
+.publication-card-content {
+  padding: 14px 16px 16px;
+}
+
+.publication-meta {
+  margin: 0 0 8px;
+  font-family: "Google Sans Regular";
+  font-size: 15px;
+}
+
+.publication-description {
+  margin: 10px 0 12px;
+  font-family: "Google Sans Regular";
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+.publication-link {
+  font-family: "Google Sans Medium";
+  text-decoration: none;
+}
+
+.publication-link:hover {
+  text-decoration: underline;
+}
