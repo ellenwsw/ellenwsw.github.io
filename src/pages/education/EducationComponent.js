@@ -5,7 +5,8 @@ import TopButton from "../../components/topButton/TopButton";
 import Educations from "../../containers/education/Educations";
 import Certifications from "../../containers/certifications/Certifications";
 import EducationImg from "./EducationImg";
-import { certifications } from "../../portfolio";
+import Publications from "../../containers/publications/Publications";
+import { certifications, publications } from "../../portfolio";
 import "./EducationComponent.css";
 import { Fade } from "react-reveal";
 
@@ -45,6 +46,9 @@ class Education extends Component {
             </div>
           </Fade>
           <Educations theme={this.props.theme} />
+          {publications.publications.length > 0 ? (
+            <Publications theme={this.props.theme} />
+          ) : null}
           {certifications.certifications.length > 0 ? (
             <div className="certifications-hidden">
               <Certifications theme={this.props.theme} />
