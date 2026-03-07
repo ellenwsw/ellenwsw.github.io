@@ -14,7 +14,7 @@ const toPrettyTagLabel = (tag) =>
     .map((part) => (part ? part[0].toUpperCase() + part.slice(1) : ""))
     .join(" ");
 
-export default function ArchivePost({ theme }) {
+export default function ArchivePost({ theme, onToggle }) {
   const { slug } = useParams();
   const [markdown, setMarkdown] = useState("");
   const [error, setError] = useState("");
@@ -61,7 +61,7 @@ export default function ArchivePost({ theme }) {
       className="archive-page"
       style={{ backgroundColor: theme.body, color: theme.text }}
     >
-      <Header theme={theme} />
+      <Header theme={theme} onToggle={onToggle} />
       <main className="archive-main post-main">
         <Link className="back-link" to="/academic-archive">
           ← Back to Academic Archive

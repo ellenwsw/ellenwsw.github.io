@@ -39,21 +39,39 @@ export default class Main extends Component {
             exact
             render={(props) =>
               settings.isSplash ? (
-                <Splash {...props} theme={this.props.theme} />
+                <Splash
+                  {...props}
+                  theme={this.props.theme}
+                  onToggle={this.props.onToggle}
+                />
               ) : (
-                <Home {...props} theme={this.props.theme} />
+                <Home
+                  {...props}
+                  theme={this.props.theme}
+                  onToggle={this.props.onToggle}
+                />
               )
             }
           />
           <Route
             path="/home"
-            render={(props) => <Home {...props} theme={this.props.theme} />}
+            render={(props) => (
+              <Home
+                {...props}
+                theme={this.props.theme}
+                onToggle={this.props.onToggle}
+              />
+            )}
           />
           <Route
             path="/work-experience"
             exact
             render={(props) => (
-              <Experience {...props} theme={this.props.theme} />
+              <Experience
+                {...props}
+                theme={this.props.theme}
+                onToggle={this.props.onToggle}
+              />
             )}
           />
           <Route
@@ -64,42 +82,76 @@ export default class Main extends Component {
           <Route
             path="/education"
             render={(props) => (
-              <Education {...props} theme={this.props.theme} />
+              <Education
+                {...props}
+                theme={this.props.theme}
+                onToggle={this.props.onToggle}
+              />
             )}
           />
           {settings.isSplash && (
             <Route
               path="/splash"
-              render={(props) => <Splash {...props} theme={this.props.theme} />}
+              render={(props) => (
+                <Splash
+                  {...props}
+                  theme={this.props.theme}
+                  onToggle={this.props.onToggle}
+                />
+              )}
             />
           )}
 
           <Route
             path="/resume"
             render={(props) => (
-              <ResumePage {...props} theme={this.props.theme} />
+              <ResumePage
+                {...props}
+                theme={this.props.theme}
+                onToggle={this.props.onToggle}
+              />
             )}
           />
           <Route
             path="/academic-archive"
             exact
-            render={(props) => <Archive {...props} theme={this.props.theme} />}
+            render={(props) => (
+              <Archive
+                {...props}
+                theme={this.props.theme}
+                onToggle={this.props.onToggle}
+              />
+            )}
           />
           <Route
             path="/mgem-capstone"
             render={(props) => (
-              <MGEMCapstone {...props} theme={this.props.theme} />
+              <MGEMCapstone
+                {...props}
+                theme={this.props.theme}
+                onToggle={this.props.onToggle}
+              />
             )}
           />
           <Route
             path="/academic-archive/:slug"
             render={(props) => (
-              <ArchivePost {...props} theme={this.props.theme} />
+              <ArchivePost
+                {...props}
+                theme={this.props.theme}
+                onToggle={this.props.onToggle}
+              />
             )}
           />
           <Route
             path="*"
-            render={(props) => <Error404 {...props} theme={this.props.theme} />}
+            render={(props) => (
+              <Error404
+                {...props}
+                theme={this.props.theme}
+                onToggle={this.props.onToggle}
+              />
+            )}
           />
         </Switch>
       </BrowserRouter>

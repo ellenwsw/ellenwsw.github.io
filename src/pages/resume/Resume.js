@@ -80,7 +80,7 @@ export default class ResumePage extends Component {
 
     return (
       <div className="resume-main">
-        <Header theme={theme} />
+        <Header theme={theme} onToggle={this.props.onToggle} />
         <div className="resume-view">
           <Fade bottom duration={2000} distance="40px">
             <div>

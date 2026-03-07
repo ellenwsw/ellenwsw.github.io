@@ -18,7 +18,7 @@ const toPrettyTagLabel = (tag) =>
     .map((part) => (part ? part[0].toUpperCase() + part.slice(1) : ""))
     .join(" ");
 
-export default function Archive({ theme }) {
+export default function Archive({ theme, onToggle }) {
   const [searchTerm, setSearchTerm] = useState("");
   const [selectedTag, setSelectedTag] = useState("all");
   const showPrivate = archiveSettings.includePrivateByDefault;
@@ -95,7 +95,7 @@ export default function Archive({ theme }) {
       className="archive-page"
       style={{ backgroundColor: theme.body, color: theme.text }}
     >
-      <Header theme={theme} />
+      <Header theme={theme} onToggle={onToggle} />
       <main className="archive-main">
         <section className="archive-hero">
           <h1>{archiveSettings.title}</h1>
@@ -169,7 +169,7 @@ export default function Archive({ theme }) {
           ))}
         </section>
       </main>
-      <Footer theme={theme} onToggle={() => {}} />
+      <Footer theme={theme} onToggle={onToggle} />
       <TopButton theme={theme} />
     </div>
   );

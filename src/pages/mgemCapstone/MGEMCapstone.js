@@ -12,13 +12,13 @@ recovery_summary <- fire_df %>%
   group_by(recovery_year) %>%
   summarise(mean_ndvi = mean(ndvi, na.rm = TRUE))`;
 
-export default function MGEMCapstone({ theme }) {
+export default function MGEMCapstone({ theme, onToggle }) {
   return (
     <div
       className="capstone-page"
       style={{ backgroundColor: theme.body, color: theme.text }}
     >
-      <Header theme={theme} />
+      <Header theme={theme} onToggle={onToggle} />
       <main className="capstone-main">
         <section className="capstone-hero">
           <h1>MGEM Capstone Project</h1>

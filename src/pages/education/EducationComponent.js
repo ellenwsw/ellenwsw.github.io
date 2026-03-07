@@ -15,7 +15,7 @@ class Education extends Component {
     const theme = this.props.theme;
     return (
       <div className="education-main">
-        <Header theme={this.props.theme} />
+        <Header theme={this.props.theme} onToggle={this.props.onToggle} />
         <div className="basic-education">
           <Fade bottom duration={2000} distance="40px">
             <div className="heading-div">
@@ -46,13 +46,13 @@ class Education extends Component {
             </div>
           </Fade>
           <Educations theme={this.props.theme} />
-          {publications.publications.length > 0 ? (
-            <Publications theme={this.props.theme} />
-          ) : null}
           {certifications.certifications.length > 0 ? (
             <div className="certifications-hidden">
               <Certifications theme={this.props.theme} />
             </div>
+          ) : null}
+          {publications.publications.length > 0 ? (
+            <Publications theme={this.props.theme} />
           ) : null}
         </div>
         <Footer theme={this.props.theme} />

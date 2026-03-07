@@ -3,6 +3,8 @@ import "./PublicationCard.css";
 import { Fade } from "react-reveal";
 
 export default function PublicationCard({ publication, theme }) {
+  const authorText = publication.authors || publication.author;
+
   return (
     <Fade bottom duration={1500} distance="20px">
       <div className="publication-card" style={{ backgroundColor: theme.body }}>
@@ -24,12 +26,12 @@ export default function PublicationCard({ publication, theme }) {
         </div>
 
         <div className="publication-card-content">
-          {publication.authors && (
+          {authorText && (
             <p
               className="publication-meta"
               style={{ color: theme.secondaryText }}
             >
-              <strong>Authors:</strong> {publication.authors}
+              <strong>Authors:</strong> {authorText}
             </p>
           )}
           {publication.venue && (

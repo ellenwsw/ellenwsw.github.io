@@ -141,3 +141,15 @@
   margin: 0 auto;
   border-radius: 8px;
 }
+
+.post-markdown .markdown-embed {
+  margin: 22px 0;
+}
+
+.post-markdown .markdown-embed iframe {
+  width: 100%;
+  min-height: 520px;
+  border: 0;
+  border-radius: 10px;
+  background: #000;
+}
