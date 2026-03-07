@@ -18,7 +18,7 @@ class Experience extends Component {
 
     return (
       <div className="experience-main">
-        <Header theme={theme} />
+        <Header theme={theme} onToggle={this.props.onToggle} />
         <div className="basic-experience">
           <Fade bottom duration={2000} distance="40px">
             <div className="experience-heading-div">

@@ -35,6 +35,7 @@ export default function Greeting(props) {
                   text="See my resume"
                   newTab={true}
                   href={greeting.resumeLink}
+                  theme={theme}
                 />
               </div>
             </div>

@@ -152,6 +152,40 @@ If your writing workflow starts in `.Rmd` or Quarto:
 6. Optionally trim rendered output to concise narrative sections before publish
    (problem, data/method, outputs, takeaways).
 
+### Interactive embeds in archive markdown
+
+You can now embed interactive viewers directly in archive `.md` files using:
+
+- `@pointcloud(https://your-point-cloud-viewer-url)`
+- `@webmap(https://your-web-map-url)`
+
+Both render as responsive iframes in the archive post detail page.
+
+**Recommended hosting targets**
+
+- Point clouds: Potree, Plasio, Cesium 3D Tiles viewers, or any HTTPS iframe-friendly viewer URL.
+- Web maps: ArcGIS Online app/embed links, Mapbox hosted maps, Leaflet apps, or other iframe-compatible map apps.
+
+**Important notes**
+
+- Use publicly accessible HTTPS URLs.
+- Ensure the provider allows embedding (`X-Frame-Options` / CSP must permit iframes).
+- Keep source data heavy assets hosted outside this repo (cloud bucket/static host/CDN).
+
+### How to embed 3D point clouds in archive markdown
+
+1. Publish your point cloud to a web viewer URL (for example Potree/Cesium/Plasio/hosted app).
+2. Confirm the viewer is publicly reachable via **HTTPS**.
+3. Confirm iframe embedding is allowed by the host (no blocking `X-Frame-Options`/CSP).
+4. In your archive markdown file, add a line exactly like:
+   - `@pointcloud(https://your-point-cloud-viewer-url)`
+5. Add a static image fallback below the embed for reliability on restricted networks.
+6. Test locally (`npm start`) and open the archive post route to verify pan/zoom/rotate interaction.
+
+A ready-to-copy example file is available at:
+
+- `public/archive-posts/interactive-map-template.md`
+
 ### Recommended minimal render checks
 
 - Headings render correctly.

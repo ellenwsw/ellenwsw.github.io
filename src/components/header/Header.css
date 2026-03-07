@@ -147,4 +147,23 @@
   .header .menu-icon {
     display: none;
   }
+
+  .theme-toggle-btn {
+    margin-left: 16px;
+  }
+}
+
+.theme-toggle-btn {
+  margin-left: 12px;
+  padding: 8px 12px;
+  border-radius: 20px;
+  font-family: "Google Sans Regular";
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.theme-toggle-btn:hover {
+  transform: translateY(-1px);
+  opacity: 0.9;
 }

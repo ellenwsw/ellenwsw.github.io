@@ -44,6 +44,29 @@ function renderInline(text, keyPrefix) {
   return parts.length ? parts : [text];
 }
 
+function parseEmbed(line) {
+  const pointCloudMatch = line.match(/^@pointcloud\(([^)]+)\)$/);
+  const mapMatch = line.match(/^@webmap\(([^)]+)\)$/);
+
+  if (pointCloudMatch) {
+    return {
+      src: pointCloudMatch[1],
+      title: "Interactive 3D point cloud",
+      className: "pointcloud-embed",
+    };
+  }
+
+  if (mapMatch) {
+    return {
+      src: mapMatch[1],
+      title: "Interactive web map",
+      className: "webmap-embed",
+    };
+  }
+
+  return null;
+}
+
 export function simpleMarkdownToElements(markdown) {
   const lines = markdown.split("\n");
   const elements = [];
@@ -87,6 +110,27 @@ export function simpleMarkdownToElements(markdown) {
     if (!line) {
       flushParagraph();
       flushList();
+      return;
+    }
+
+    const embedData = parseEmbed(line);
+    if (embedData) {
+      flushParagraph();
+      flushList();
+      elements.push(
+        <div
+          key={`embed-${key++}`}
+          className={`markdown-embed ${embedData.className}`}
+        >
+          <iframe
+            src={embedData.src}
+            title={embedData.title}
+            loading="lazy"
+            allow="fullscreen; xr-spatial-tracking"
+            allowFullScreen
+          />
+        </div>
+      );
       return;
     }
 

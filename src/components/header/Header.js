@@ -17,8 +17,9 @@ const onMouseOut = (event) => {
 
 class Header extends Component {
   render() {
-    const theme = this.props.theme;
+    const { theme, onToggle } = this.props;
     const link = settings.isSplash ? "/splash" : "home";
+
     return (
       <Fade top duration={1000} distance="20px">
         <SeoHeader />
@@ -97,6 +98,22 @@ class Header extends Component {
                 </NavLink>
               </li>
             </ul>
+            <button
+              type="button"
+              className="theme-toggle-btn"
+              onClick={onToggle}
+              style={{
+                color: theme.body,
+                backgroundColor: theme.text,
+                border: `1px solid ${theme.text}`,
+              }}
+              aria-label="Toggle day and night mode"
+              title="Toggle day/night"
+            >
+              <span role="img" aria-label="theme mode toggle icons">
+                🌙/☀️
+              </span>
+            </button>
           </header>
         </div>
       </Fade>

@@ -240,7 +240,7 @@ const publications = {
   publications: [
     {
       title: "MGEM Capstone: Cattle Habitat Preference Forecasting",
-      author: "Ellen Wu",
+      authors: "Ellen Wu",
       venue: "UBC MGEM Capstone Project",
       year: "2026",
       description:
@@ -248,13 +248,16 @@ const publications = {
       link: "",
     },
     {
-      title: "A Criticism of Fukushima Radioactive Water Discharge in the Lens of Environmental Justice",
-      author: "Ellen Wu",
-      venue: "Trail Six: Undergraduate Journal of Geography Department of Geography",
+      title:
+        "A Criticism of Fukushima Radioactive Water Discharge in the Lens of Environmental Justice",
+      authors: "Ellen Wu",
+      venue:
+        "Trail Six: Undergraduate Journal of Geography Department of Geography",
       year: "2025",
       description:
         "This paper critically examines Japan’s decision to discharge treated radioactive water from the Fukushima Daiichi Nuclear Power Station into the Pacific Ocean through the lens of environmental justice.",
-      link: "https://static1.squarespace.com/static/6671e1119dd75e6b6cf02ffd/t/67dc949adb63967a869a1190/1758072906201/TRAIL+SIX+Volume+19",
+      link:
+        "https://static1.squarespace.com/static/6671e1119dd75e6b6cf02ffd/t/67dc949adb63967a869a1190/1758072906201/TRAIL+SIX+Volume+19",
     },
   ],
 };
@@ -314,8 +317,7 @@ const experience = {
         {
           title: "Oral Practice Assistant (UBC Work Learn)",
           company: "Chinese Language Program, UBC Faculty of Arts",
-          company_url:
-            "https://chinese.arts.ubc.ca/",
+          company_url: "https://chinese.arts.ubc.ca/",
           logo_path: "ubc_logo.png",
           duration: "September 2023 - August 2024",
           location: "Vancouver, B.C.",
