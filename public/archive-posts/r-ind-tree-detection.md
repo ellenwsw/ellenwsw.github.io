@@ -13,33 +13,13 @@ The analysis was performed across four distinct plots representing different for
 ## Key Visual Outputs
 
 ### 3D segmentation maps for all 4 plots
-<iframe 
-  src="/assets/Plot1.html" 
-  width="100%" 
-  height="500px" 
-  style="border:none; border-radius:8px;">
-</iframe>
+@pointcloud(/archive-posts/images/Plot1.html)
 
-<iframe 
-  src="/assets/Plot2.html" 
-  width="100%" 
-  height="500px" 
-  style="border:none; border-radius:8px;">
-</iframe>
+@pointcloud(/archive-posts/images/Plot2.html)
 
-<iframe 
-  src="/assets/Plot3.html" 
-  width="100%" 
-  height="500px" 
-  style="border:none; border-radius:8px;">
-</iframe>
+@pointcloud(/archive-posts/images/Plot3.html)
 
-<iframe 
-  src="/assets/Plot4.html" 
-  width="100%" 
-  height="500px" 
-  style="border:none; border-radius:8px;">
-</iframe>
+@pointcloud(/archive-posts/images/Plot4.html)
 
 ### Treetop detection with Plot 1 CHM
 ![Treetop Plot 1](/archive-posts/images/treetop.png)
@@ -48,12 +28,7 @@ The analysis was performed across four distinct plots representing different for
 ![Treetop Plot 2 2m](/archive-posts/images/treetop_plot2.png)
 
 ### RGL visualizations demonstrating the final segmented tree objects with the optimal resolution
-<iframe 
-  src="/assets/Plot2_2m.html" 
-  width="100%" 
-  height="500px" 
-  style="border:none; border-radius:8px;">
-</iframe>
+@pointcloud(/archive-posts/images/Plot2_2m.html)
 
 ## Reflection
 - It was concludes that 2 m spatial resolution is the optimal choice for segmentation across the MKRF.

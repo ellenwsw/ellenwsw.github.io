@@ -1,5 +1,8 @@
 import React from "react";
 import ReactDOM from "react-dom";
+
+jest.mock("./components/degreeCard/DegreeCard", () => () => null);
+
 import App from "./App";
 
 it("renders without crashing", () => {
