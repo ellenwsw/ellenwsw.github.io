@@ -8,7 +8,6 @@ React template.
 
 This README is written for:
 
-- **Collaborators** contributing content or code.
 - **Maintainer-self** for operational and publishing continuity.
 
 ## Upstream template reference
@@ -51,21 +50,6 @@ workflows were extended in this repo.
   replaced from template defaults.
 - Repository purpose shifted from a generic software portfolio template instance
   to a geospatial/environmental academic-professional portfolio.
-
-## Differences vs upstream (commit-based summary)
-
-| Date       | Commit    | Change summary                                                                     | Category              |
-| ---------- | --------- | ---------------------------------------------------------------------------------- | --------------------- |
-| 2026-02-28 | `ba682ab` | Added manual degree tags + user-friendly tag labels in archive UI/data flow.       | Archive filtering     |
-| 2026-02-28 | `5f9301b` | Fixed markdown list continuation issues affecting archive post rendering fidelity. | Markdown rendering    |
-| 2026-02-28 | `aa554be` | Corrected archive post dates for timeline accuracy.                                | Content quality       |
-| 2026-02-28 | `8487b69` | Preserved full experience logos within circular placeholders.                      | UI refinement         |
-| 2026-03-01 | `c4152a4` | Added new GEM 521 archive post scaffolds.                                          | Content pipeline      |
-| 2026-03-01 | `890b4e8` | Refactored LiDAR post into concise archive markdown format.                        | Content normalization |
-| 2026-03-01 | `f5ba172` | Rewrote GEM 521 Lab 4 post into concise archive format.                            | Content normalization |
-| 2026-03-01 | `d427461` | Completed upload pass for current archive posts set.                               | Content ingestion     |
-
-> Use `git log --oneline --decorate` for full chronology.
 
 ## Repository structure (key files)
 
